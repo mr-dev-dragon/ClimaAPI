@@ -24,7 +24,7 @@ from django.urls import path
 
 urlpatterns = [
 
-    path('', get_weather),  # You can set this to an index page if you'd like to return a homepage
+    path('', get_weather), 
     path('weather/', get_weather, name='get_weather'),
 ]
  
