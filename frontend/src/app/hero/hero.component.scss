@@ -1,0 +1,74 @@
+.weather-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.9); // Semi-transparent background
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    // Header Section
+    .header {
+        text-align: center;
+        border-bottom: 1px solid #d3d3d3;
+        padding-bottom: 1rem;
+
+        .location {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #4a5568; // Cool gray
+        }
+
+        .zip-code {
+            display: none;
+
+            @media (min-width: 640px) {
+                display: inline-block;
+                font-size: 0.75rem;
+                color: #a0aec0; // Light gray
+            }
+        }
+    }
+
+    // Weather Condition Section
+    .condition {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #718096; // Medium gray
+        padding: 1rem 0;
+    }
+
+    // Temperature Section
+    .temperature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.125rem; // 18px
+        color: #718096;
+
+        .current {
+            font-size: 3rem;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .temp-low,
+        .temp-high {
+            font-size: 1.125rem;
+            color: #a0aec0; // Light gray
+        }
+    }
+
+    // Footer Section
+    .footer {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.875rem; // Small text
+        color: #cbd5e0; // Very light gray
+        letter-spacing: 0.05rem;
+    }
+}

@@ -1,0 +1,6 @@
+pre {
+    max-height: 300px;
+    /* Limit height for large data */
+    overflow-y: auto;
+    /* Add scroll for overflow */
+}
